@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvisorMatch - BM25 Lexical Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .bm25-header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        .bm25-badge {
+            background: #6c757d;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .paper-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .paper-score {
+            float: right;
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .paper-prof {
+            color: #500000;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1>🎓 AdvisorMatch</h1>
+                </div>
+                <p class="tagline">Find your perfect thesis advisor using AI-powered semantic search</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Semantic Search</a>
+            <a href="bm25.html" class="nav-link active">BM25 Search</a>
+        </nav>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter keywords (e.g., 'information retrieval')..."
+                    autocomplete="off">
+                <button id="searchButton" class="search-btn">
+                    <span class="btn-text">Search</span>
+                    <span class="btn-icon">🔍</span>
+                </button>
+            </div>
+        </section>
+
+        <div id="loadingSpinner" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <p>Calculating BM25 scores...</p>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <div class="results-header">
+                <h2 id="resultsInfo">Results</h2>
+            </div>
+            <div id="resultsContainer" class="results-container">
+                <!-- Results will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bm25.js"></script>
+</body>
+
+</html>

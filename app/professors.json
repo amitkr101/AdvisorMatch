@@ -1,0 +1,685 @@
+[
+    {
+        "name": " Andreas Klappenecker",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Quantum computing\nImage processing\nCryptography, Quantum computing, Image processing, Cryptography",
+        "url": "https://engineering.tamu.edu/cse/profiles/aklappenecker.html",
+        "openalex_author_id": "A5018681725"
+    },
+    {
+        "name": " Victoria Crawford",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Approximation algorithms\nApplied optimization\nData mining, Approximation algorithms, Applied optimization, Data mining",
+        "url": "https://engineering.tamu.edu/cse/profiles/crawford-victoria.html",
+        "openalex_author_id": "A5009720634"
+    },
+    {
+        "name": "\u00dcnal G\u00f6kta\u015f",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/goktas-unal.html",
+        "openalex_author_id": "A5038367536"
+    },
+    {
+        "name": "Aakash Tyagi",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Hardware verification\n\n\nTeaching Interests\n\nComputer Architecture\nData Structures and Algorithms\nHardware Verification\n\n\nIndustry Experience\n\nTwenty years of service at Intel in positions ranging from individual technical contributor to senior director in Server Development Group.\nWorked on eight generations of CPU\u2019s at Intel; most recently managed the design and execution of Knights Landing: 2015 2nd Generation Xeon Phi Product, Hardware verification, Computer Architecture, Data Structures and Algorithms, Hardware Verification, Twenty years of service at Intel in positions ranging from individual technical contributor to senior director in Server Development Group., Worked on eight generations of CPU\u2019s at Intel; most recently managed the design and execution of Knights Landing: 2015 2nd Generation Xeon Phi Product",
+        "url": "https://engineering.tamu.edu/cse/profiles/tyagi-aakash.html",
+        "openalex_author_id": "A5045346930"
+    },
+    {
+        "name": "Abdullah Muzahid",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer architecture\nSystems\nArtificial intelligence, Computer architecture, Systems, Artificial intelligence",
+        "url": "https://engineering.tamu.edu/cse/profiles/Muzahid-Abdullah.html",
+        "openalex_author_id": "A5102915313"
+    },
+    {
+        "name": "Alan Kuhnle",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Algorithms and theory\nMachine learning\nData science\nCombinatorial optimization, Algorithms and theory, Machine learning, Data science, Combinatorial optimization",
+        "url": "https://engineering.tamu.edu/cse/profiles/kuhnle-alan.html",
+        "openalex_author_id": "A5083575259"
+    },
+    {
+        "name": "Alpaslan Duysak",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer graphics\nDeformation algorithms\nHaptic design\nMachine learning\nOptimization, Computer graphics, Deformation algorithms, Haptic design, Machine learning, Optimization",
+        "url": "https://engineering.tamu.edu/cse/profiles/duysak-alpaslan.html",
+        "openalex_author_id": "A5110740238"
+    },
+    {
+        "name": "Amit Merchant",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/merchant-amit.html"
+    },
+    {
+        "name": "Anxiao \"Andrew\" Jiang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Information theory\nCoding for flash memories\nWireless and sensor networks\nAlgorithms, Information theory, Coding for flash memories, Wireless and sensor networks, Algorithms",
+        "url": "https://engineering.tamu.edu/cse/profiles/ajiang.html",
+        "openalex_author_id": "A5103150810"
+    },
+    {
+        "name": "Ariful Azad",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "High-performance computing\nGraph algorithms\nGraph machine learning\nBioinformatics, High-performance computing, Graph algorithms, Graph machine learning, Bioinformatics",
+        "url": "https://engineering.tamu.edu/cse/profiles/azad-ariful.html",
+        "openalex_author_id": "A5110180892"
+    },
+    {
+        "name": "Bobak Mortazavi",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Medical analytics, prediction, and comparative effectiveness\nMachine learning\nEmbedded systems design\nWearable sensors\nCyber-physical systems, Medical analytics, prediction, and comparative effectiveness, Machine learning, Embedded systems design, Wearable sensors, Cyber-physical systems",
+        "url": "https://engineering.tamu.edu/cse/profiles/mortazavi-bobak.html",
+        "openalex_author_id": "A5040096171"
+    },
+    {
+        "name": "Calvin Beideman",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/beideman-calvin.html",
+        "openalex_author_id": "A5091028458"
+    },
+    {
+        "name": "Cheng Zhang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer vision\nMachine learning\nArtificial intelligence\nCyber-physical systems, Computer vision, Machine learning, Artificial intelligence, Cyber-physical systems",
+        "url": "https://engineering.tamu.edu/cse/profiles/zhang-cheng.html",
+        "openalex_author_id": "A5104243198"
+    },
+    {
+        "name": "Daniel A. Jim\u00e9nez",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/djimenez.html",
+        "openalex_author_id": "A5100612822"
+    },
+    {
+        "name": "David Kebo Houngninou",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Logic synthesis\nHardware formal verification and validation\u00a0\nBoolean/switching theory, Logic synthesis, Hardware formal verification and validation, Boolean/switching theory",
+        "url": "https://engineering.tamu.edu/cse/profiles/Houngninou-Kebo-David.html",
+        "openalex_author_id": "A5079798993"
+    },
+    {
+        "name": "Dilma Da Silva",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Cloud computing\nOperating systems\nDistributed computing\nHigh-end computing, Cloud computing, Operating systems, Distributed computing, High-end computing",
+        "url": "https://engineering.tamu.edu/cse/profiles/da-silva-dilma.html",
+        "openalex_author_id": "A5045204301"
+    },
+    {
+        "name": "Dmitri Loguinov",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Stochastic analysis of networks\nGraph algorithms\nInternet measurements\nPeer-to-peer networks\nCongestion control\nHigh-performance web crawling\nMassive-scale information retrieval\nTopology modeling, Stochastic analysis of networks, Graph algorithms, Internet measurements, Peer-to-peer networks, Congestion control, High-performance web crawling, Massive-scale information retrieval, Topology modeling",
+        "url": "https://engineering.tamu.edu/cse/profiles/dloguinov.html",
+        "openalex_author_id": "A5076734500"
+    },
+    {
+        "name": "Drew Hamilton",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Cybersecurity\nDigital forensics\nIndustrial control system security\nSecurity architecture, Cybersecurity, Digital forensics, Industrial control system security, Security architecture",
+        "url": "https://engineering.tamu.edu/cse/profiles/hamilton-drew.html",
+        "openalex_author_id": "A5063984980"
+    },
+    {
+        "name": "Duncan M. \"Hank\" Walker",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Integrated circuit test\nDefect-based test\nDelay test\nIDDQ test\nFault diagnosis\nRealistic fault modeling\nParametric and functional yield prediction, Integrated circuit test, Defect-based test, Delay test, IDDQ test, Fault diagnosis, Realistic fault modeling, Parametric and functional yield prediction",
+        "url": "https://engineering.tamu.edu/cse/profiles/walker-duncan.html",
+        "openalex_author_id": "A5027337337"
+    },
+    {
+        "name": "Dylan Shell",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Distributed AI\nBiologically-inspired multi-robot systems\nCoordinated system\nAnalysis of multi-agent systems\nCrowd modeling, Distributed AI, Biologically-inspired multi-robot systems, Coordinated system, Analysis of multi-agent systems, Crowd modeling",
+        "url": "https://engineering.tamu.edu/cse/profiles/dshell.html",
+        "openalex_author_id": "A5035574727"
+    },
+    {
+        "name": "Eun Jung \"EJ\" Kim",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer architecture\nPower efficient systems\nParallel/distributed systems\nCluster computing\nPerformance evaluation\nFault-tolerant computing, Computer architecture, Power efficient systems, Parallel/distributed systems, Cluster computing, Performance evaluation, Fault-tolerant computing",
+        "url": "https://engineering.tamu.edu/cse/profiles/ejkim.html",
+        "openalex_author_id": "A5046227897"
+    },
+    {
+        "name": "Frank M. Shipman",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Intelligent user interfaces\nHypertext\nComputers and education\nMultimedia\nNew media\nComputers and design\nComputer-human interaction\nComputer-supported cooperative work, Intelligent user interfaces, Hypertext, Computers and education, Multimedia, New media, Computers and design, Computer-human interaction, Computer-supported cooperative work",
+        "url": "https://engineering.tamu.edu/cse/profiles/fshipman.html",
+        "openalex_author_id": "A5077860280"
+    },
+    {
+        "name": "Guni Sharon",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Combinatorial search\nMultiagent route assignment\nGame theory\nFlow and convex optimization\nMultiagent modeling and simulation\nTraffic management and traffic optimization application\nArtificial intelligence, Combinatorial search, Multiagent route assignment, Game theory, Flow and convex optimization, Multiagent modeling and simulation, Traffic management and traffic optimization application, Artificial intelligence",
+        "url": "https://engineering.tamu.edu/cse/profiles/Sharon-Guni.html",
+        "openalex_author_id": "A5088017068"
+    },
+    {
+        "name": "Guofei Gu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Network and system security\nInternet malware/botnet/APT detection, defense and analysis\nSoftware-defined programmable security (SDN, NFV, Cloud, Edge, etc.)\nMobile and IoT security\nAI security\nWeb and social networking security\nIntrusion detection, anomaly detection and beyond, Network and system security, Internet malware/botnet/APT detection, defense and analysis, Software-defined programmable security (SDN, NFV, Cloud, Edge, etc.), Mobile and IoT security, AI security, Web and social networking security, Intrusion detection, anomaly detection and beyond",
+        "url": "https://engineering.tamu.edu/cse/profiles/guofei.html",
+        "openalex_author_id": "A5058852421"
+    },
+    {
+        "name": "Han Tran",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "High-performance parallel algorithms\nScientific computing\nComputational mechanics, High-performance parallel algorithms, Scientific computing, Computational mechanics",
+        "url": "https://engineering.tamu.edu/cse/profiles/tran-han.html",
+        "openalex_author_id": "A5007056410"
+    },
+    {
+        "name": "Hyunyoung Lee",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Distributed algorithms and systems: dynamic distributed systems (i.e., systems with churn). Specification, implementation, and application of distributed shared data structures and their consistency models. Randomized distributed data structures and algorithms for improved fault-tolerance and efficiency.\nWireless mobile computing: Design and analysis of distributed algorithms for various problems in wireless, mobile communication systems and wireless sensor networks. Design and analysis of solutions for wireless security problems. Spatiotemporal algorithms and analysis for mobile computing.\nFault-tolerant computing and reliable computing: Development of practical attack models and defense systems, particularly in byzantine (arbitrary) faulty computing environments. Development of distributed server systems that can better sustain denial of service attacks., Distributed algorithms and systems: dynamic distributed systems (i.e., systems with churn). Specification, implementation, and application of distributed shared data structures and their consistency models. Randomized distributed data structures and algorithms for improved fault-tolerance and efficiency., Wireless mobile computing: Design and analysis of distributed algorithms for various problems in wireless, mobile communication systems and wireless sensor networks. Design and analysis of solutions for wireless security problems. Spatiotemporal algorithms and analysis for mobile computing., Fault-tolerant computing and reliable computing: Development of practical attack models and defense systems, particularly in byzantine (arbitrary) faulty computing environments. Development of distributed server systems that can better sustain denial of service attacks.",
+        "url": "https://engineering.tamu.edu/cse/profiles/hlee.html",
+        "openalex_author_id": "A5101735131"
+    },
+    {
+        "name": "J. Michael Moore",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Human-Computer interaction\nSoftware design\nInformation retrieval\nDigital libraries, Human-Computer interaction, Software design, Information retrieval, Digital libraries",
+        "url": "https://engineering.tamu.edu/cse/profiles/moore-j-michael.html",
+        "openalex_author_id": "A5044642013"
+    },
+    {
+        "name": "James Caverlee",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Web-scale information management\nDistributed data-intensive systems\nInformation retrieval\nDatabases\nSocial Computing, Web-scale information management, Distributed data-intensive systems, Information retrieval, Databases, Social Computing",
+        "url": "https://engineering.tamu.edu/cse/profiles/jcaverlee.html",
+        "openalex_author_id": "A5064455922"
+    },
+    {
+        "name": "Jason O'Kane",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Autonomous robots\nPlanning algorithms\nComputational geometry, Autonomous robots, Planning algorithms, Computational geometry",
+        "url": "https://engineering.tamu.edu/cse/profiles/okane-jason.html",
+        "openalex_author_id": "A5089976123"
+    },
+    {
+        "name": "Jeeeun Kim",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Digital fabrication\nHuman-computer interaction\nHuman-artificial intelligence (AI) interaction\nDesign research, Digital fabrication, Human-computer interaction, Human-artificial intelligence (AI) interaction, Design research",
+        "url": "https://engineering.tamu.edu/cse/profiles/Kim-Jeeeun.html",
+        "openalex_author_id": "A5032544422"
+    },
+    {
+        "name": "Jeff Huang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Software engineering\nProgramming languages\nConcurrency\nRuntime verification, Software engineering, Programming languages, Concurrency, Runtime verification",
+        "url": "https://engineering.tamu.edu/cse/profiles/huang-jeff.html",
+        "openalex_author_id": "A5103035835"
+    },
+    {
+        "name": "Jianer Chen",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Algorithms and complexity\ncomputer graphics\nbioinformatics\ncomputer networks, Algorithms and complexity, computer graphics, bioinformatics, computer networks",
+        "url": "https://engineering.tamu.edu/cse/profiles/jchen.html",
+        "openalex_author_id": "A5032419954"
+    },
+    {
+        "name": "John Keyser",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Robust geometric and solid modeling\nPhysically-based simulation\nBrain networks\nGeometric computing\nGraphics and visualization\nSimulation and modeling\nComputer algebra, Robust geometric and solid modeling, Physically-based simulation, Brain networks, Geometric computing, Graphics and visualization, Simulation and modeling, Computer algebra",
+        "url": "https://engineering.tamu.edu/cse/profiles/jkeyser.html",
+        "openalex_author_id": "A5035096541"
+    },
+    {
+        "name": "Juan Garay",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Cryptography and information security\nCryptographic protocols and schemes\nSecure multiparty computation\nCryptocurrencies and blockchain protocols\nCryptography and game theory\nNetwork security\nDistributed computing\nConsensus problems\nAlgorithms, Cryptography and information security, Cryptographic protocols and schemes, Secure multiparty computation, Cryptocurrencies and blockchain protocols, Cryptography and game theory, Network security, Distributed computing, Consensus problems, Algorithms",
+        "url": "https://engineering.tamu.edu/cse/profiles/garay-juan.html",
+        "openalex_author_id": "A5005281401"
+    },
+    {
+        "name": "Khanh Nguyen",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Programming languages\nCompiler & runtime support\nMemory management\nBig data systems, Programming languages, Compiler & runtime support, Memory management, Big data systems",
+        "url": "https://engineering.tamu.edu/cse/profiles/Nguyen-Khanh.html",
+        "openalex_author_id": "A5013166244"
+    },
+    {
+        "name": "Ki Hwan Yum",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer architecture\nParallel/Distributed systems\nComputer networks\nCluster computing\nQuality of service support in cluster networks and internet\nPerformance evaluation\nFault-tolerant computing\nPower-efficient systems\nWireless sensor networks, Computer architecture, Parallel/Distributed systems, Computer networks, Cluster computing, Quality of service support in cluster networks and internet, Performance evaluation, Fault-tolerant computing, Power-efficient systems, Wireless sensor networks",
+        "url": "https://engineering.tamu.edu/cse/profiles/khyum.html",
+        "openalex_author_id": "A5084141859"
+    },
+    {
+        "name": "Kuan-Hao Huang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Natural language processing\nLarge language models\nMultimodal learning\nMachine learning, Natural language processing, Large language models, Multimodal learning, Machine learning",
+        "url": "https://engineering.tamu.edu/cse/profiles/huang-kuan-hao.html",
+        "openalex_author_id": "A5048297682"
+    },
+    {
+        "name": "Marcus Botacin",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Malware\nAntivirus\nReverse engineering\nForensics\nHardware-assisted security, Malware, Antivirus, Reverse engineering, Forensics, Hardware-assisted security",
+        "url": "https://engineering.tamu.edu/cse/profiles/botacin-marcus.html",
+        "openalex_author_id": "A5060510652"
+    },
+    {
+        "name": "Marian Zaki",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Distributed systems\nDesign of privacy preserving protocols\nCryptography\nComputer science teaching pedagogies, Distributed systems, Design of privacy preserving protocols, Cryptography, Computer science teaching pedagogies",
+        "url": "https://engineering.tamu.edu/cse/profiles/zaki-marian.html",
+        "openalex_author_id": "A5093879395"
+    },
+    {
+        "name": "Martin Carlisle",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer security\nProgramming languages\nComputer science education, Computer security, Programming languages, Computer science education",
+        "url": "https://engineering.tamu.edu/cse/profiles/Carlisle-Martin.html",
+        "openalex_author_id": "A5033816867"
+    },
+    {
+        "name": "Meng Xia",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Human-AI interaction\nData visualization\nEducation technology, Human-AI interaction, Data visualization, Education technology",
+        "url": "https://engineering.tamu.edu/cse/profiles/xia-meng.html",
+        "openalex_author_id": "A5035687843"
+    },
+    {
+        "name": "Michael Quinn",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/quinn-michael.html"
+    },
+    {
+        "name": "Nate Veldt",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Graph algorithms\nNetwork science\nMatrix computations\nComputational optimization\nData science, machine learning, Graph algorithms, Network science, Matrix computations, Computational optimization, Data science, machine learning",
+        "url": "https://engineering.tamu.edu/cse/profiles/Veldt-Nate.html",
+        "openalex_author_id": "A5046315164"
+    },
+    {
+        "name": "Nima Kalantari",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer graphics\nComputational photography\nRendering\nDeep learning, Computer graphics, Computational photography, Rendering, Deep learning",
+        "url": "https://engineering.tamu.edu/cse/profiles/Nima-Kalantari.html",
+        "openalex_author_id": "A5008433002"
+    },
+    {
+        "name": "Nitesh Saxena",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Various aspects of cybersecurity and privacy, with emphasis on computer systems and network security, mobile and Internet of Things device security, applied cryptography, user-centered security and web privacy.\nI attempt to address cybersecurity problems with approaches from within the core computer science discipline, including systems, machine learning, artificial intelligence, theory and human-computer interaction, and with principles drawn from across disciplines, including psychology and neuroscience, and criminal justice.\nWell-integrated with research, I have keen interest in cybersecurity education and workforce development. In this line, I have developed and directed several cutting-edge cybersecurity programs, including the Scholarship for Service program at the University of Alabama at Birmingham (UAB), M.S. cybersecurity program at UAB and M.S. cybersecurity program at the New York University Tandon School of Engineering., Various aspects of cybersecurity and privacy, with emphasis on computer systems and network security, mobile and Internet of Things device security, applied cryptography, user-centered security and web privacy., I attempt to address cybersecurity problems with approaches from within the core computer science discipline, including systems, machine learning, artificial intelligence, theory and human-computer interaction, and with principles drawn from across disciplines, including psychology and neuroscience, and criminal justice., Well-integrated with research, I have keen interest in cybersecurity education and workforce development. In this line, I have developed and directed several cutting-edge cybersecurity programs, including the Scholarship for Service program at the University of Alabama at Birmingham (UAB), M.S. cybersecurity program at UAB and M.S. cybersecurity program at the New York University Tandon School of Engineering.",
+        "url": "https://engineering.tamu.edu/cse/profiles/Saxena-Nitesh.html",
+        "openalex_author_id": "A2143065933"
+    },
+    {
+        "name": "Paul Taele",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Sketch recognition\nHuman-computer interaction\nArtificial intelligence\u00a0\nIntelligent user interfaces, Sketch recognition, Human-computer interaction, Artificial intelligence, Intelligent user interfaces",
+        "url": "https://engineering.tamu.edu/cse/profiles/taele-paul.html",
+        "openalex_author_id": "A5075831545"
+    },
+    {
+        "name": "Pauline Wade",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Engineering education pedagogy for software quality assurance\nSoftware engineering methodology\nEmpirical software engineering practices, Engineering education pedagogy for software quality assurance, Software engineering methodology, Empirical software engineering practices",
+        "url": "https://engineering.tamu.edu/cse/profiles/wade-pauline.html",
+        "openalex_author_id": "A5015828264"
+    },
+    {
+        "name": "Philip Ritchey",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer security and privacy\nInformation hiding\nCensorship-resistant technologies\nMulti-agent systems\nSimulation and modeling, Computer security and privacy, Information hiding, Censorship-resistant technologies, Multi-agent systems, Simulation and modeling",
+        "url": "https://engineering.tamu.edu/cse/profiles/ritchey-philip.html",
+        "openalex_author_id": "A5044569752"
+    },
+    {
+        "name": "Rabi N. Mahapatra",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Embedded systems\nSystem-on-chip\nReconfigurable architectures\nReal-time systems\nCyber-infrastructure\nSemantic networks, Embedded systems, System-on-chip, Reconfigurable architectures, Real-time systems, Cyber-infrastructure, Semantic networks",
+        "url": "https://engineering.tamu.edu/cse/profiles/rmahapatra.html",
+        "openalex_author_id": "A5103702897"
+    },
+    {
+        "name": "Radu Stoleru",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Deeply embedded wireless sensor systems\nDistributed systems\nEmbedded and real-time computing\nComputer networking, Deeply embedded wireless sensor systems, Distributed systems, Embedded and real-time computing, Computer networking",
+        "url": "https://engineering.tamu.edu/cse/profiles/rstoleru.html",
+        "openalex_author_id": "A5083949715"
+    },
+    {
+        "name": "Ricardo Gutierrez-Osuna",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Intelligent sensors\nSpeech processing\nFace recognition\nMachine olfaction\nNeuromorphic computation\nMobile robotics\nPattern recognition\nMachine learning, Intelligent sensors, Speech processing, Face recognition, Machine olfaction, Neuromorphic computation, Mobile robotics, Pattern recognition, Machine learning",
+        "url": "https://engineering.tamu.edu/cse/profiles/rgutierrez-osuna.html",
+        "openalex_author_id": "A5062423099"
+    },
+    {
+        "name": "Riccardo Bettati",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Distributed real-time systems\nScheduling algorithms\nCommunication protocols\nAnonymity and privacy, computer-supported security education, Distributed real-time systems, Scheduling algorithms, Communication protocols, Anonymity and privacy, computer-supported security education",
+        "url": "https://engineering.tamu.edu/cse/profiles/bettati-riccardo.html",
+        "openalex_author_id": "A5040027964"
+    },
+    {
+        "name": "Robert Lightfoot",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer science education\nCybersecurity - human elements, Computer science education, Cybersecurity - human elements",
+        "url": "https://engineering.tamu.edu/cse/profiles/Lightfoot-Robert.html",
+        "openalex_author_id": "A5053055365"
+    },
+    {
+        "name": "Ruihong Huang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Natural language processing (NLP)\nInformation extraction\nMachine learning\nArtificial intelligence\nDigital humanities, Natural language processing (NLP), Information extraction, Machine learning, Artificial intelligence, Digital humanities",
+        "url": "https://engineering.tamu.edu/cse/profiles/huang-ruihong.html",
+        "openalex_author_id": "A5101688218"
+    },
+    {
+        "name": "Samson Zhou",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Algorithms and theory\n\n\nData science\n\n\nMachine learning, Algorithms and theory, Data science, Machine learning",
+        "url": "https://engineering.tamu.edu/cse/profiles/zhou-samson.html",
+        "openalex_author_id": "A5018283928"
+    },
+    {
+        "name": "Sandeep Kumar",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer security\nComputer networking, Computer security, Computer networking",
+        "url": "https://engineering.tamu.edu/cse/profiles/kumar-sandeep.html",
+        "openalex_author_id": "A5090167516"
+    },
+    {
+        "name": "Scott Schaefer",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer graphics\nGeometric modeling\nScientific visualization, Computer graphics, Geometric modeling, Scientific visualization",
+        "url": "https://engineering.tamu.edu/cse/profiles/schaefer-scott.html",
+        "openalex_author_id": "A5037680267"
+    },
+    {
+        "name": "Michael Moore",
+        "college": "College of Arts & Sciences",
+        "dept": "Psychological and Brain Sciences",
+        "interests": "Psychological and Brain Sciences",
+        "url": "https://artsci.tamu.edu/psychological-brain-sciences/people/profiles/michael-moore.html",
+        "openalex_author_id": "A5044049970"
+    },
+    {
+        "name": "Shawn Lupoli",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/lupoli-shawn.html"
+    },
+    {
+        "name": "Shawna Thomas",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Algorithms for robotic motion planning\nMotion planning applications to computational biology\nComputational geometry, Algorithms for robotic motion planning, Motion planning applications to computational biology, Computational geometry",
+        "url": "https://engineering.tamu.edu/cse/profiles/sthomas.html",
+        "openalex_author_id": "A5086656459"
+    },
+    {
+        "name": "Shinjiro Sueda",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer graphics\n\n\nComputer animation\n\n\nComputational biomechanics\n\n\nComputational fabrication, Computer graphics, Computer animation, Computational biomechanics, Computational fabrication",
+        "url": "https://engineering.tamu.edu/cse/profiles/sueda-shinjiro.html",
+        "openalex_author_id": "A5039112646"
+    },
+    {
+        "name": "Shreyas Kumar",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Cybersecurity\nAI and Cybersecurity\nCyber warfare\nSecurity standards\nCyber insurance, Cybersecurity, AI and Cybersecurity, Cyber warfare, Security standards, Cyber insurance",
+        "url": "https://engineering.tamu.edu/cse/profiles/kumar-shreyas.html",
+        "openalex_author_id": "A5006700699"
+    },
+    {
+        "name": "Shuiwang Ji",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Machine learning\nArtificial intelligence (AI) for science and engineering\nLanguage models and agents, Machine learning, Artificial intelligence (AI) for science and engineering, Language models and agents",
+        "url": "https://engineering.tamu.edu/cse/profiles/Ji-Shuiwang.html",
+        "openalex_author_id": "A5052278550"
+    },
+    {
+        "name": "Si Liu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Formal methods\nDatabases\nDistributed systems\nSecurity, Formal methods, Databases, Distributed systems, Security",
+        "url": "https://engineering.tamu.edu/cse/profiles/liu-si.html",
+        "openalex_author_id": "A5100330142"
+    },
+    {
+        "name": "Sing-Hoi Sze",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Bioinformatics/Computational Biology\nMultiple sequence alignment\nMotif finding with applications to predicting transcription factor binding sites\nBiological network analysis\nIdentification of gene clusters within genomes, Bioinformatics/Computational Biology, Multiple sequence alignment, Motif finding with applications to predicting transcription factor binding sites, Biological network analysis, Identification of gene clusters within genomes",
+        "url": "https://engineering.tamu.edu/cse/profiles/ssze.html",
+        "openalex_author_id": "A5107809749"
+    },
+    {
+        "name": "Suleman Mahmood",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/mahmood-suleman.html",
+        "openalex_author_id": "A5085140326"
+    },
+    {
+        "name": "Teresa Leyk",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Scientific computations\n\n\nNumerical solving of ODEs and PDEs, Scientific computations, Numerical solving of ODEs and PDEs",
+        "url": "https://engineering.tamu.edu/cse/profiles/tleyk.html"
+    },
+    {
+        "name": "Thomas R. Ioerger",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Artificial intelligence\nMachine learning\nIntelligent agents\nBioinformatics, Artificial intelligence, Machine learning, Intelligent agents, Bioinformatics",
+        "url": "https://engineering.tamu.edu/cse/profiles/tioerger.html",
+        "openalex_author_id": "A5048876954"
+    },
+    {
+        "name": "Tianbao Yang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Optimization\nMachine learning\nArtificial intelligence, Optimization, Machine learning, Artificial intelligence",
+        "url": "https://engineering.tamu.edu/cse/profiles/yang-tianbao.html",
+        "openalex_author_id": "A5023288846"
+    },
+    {
+        "name": "Tim Davis",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Research Vision: High-Performance Combinatorial Scientific Computing\nThe coming decades of high-performance computational mathematics will be increasingly dominated by heterogeneous computing based on hybrid multiprocessors with of a mix of conventional CPU cores and high-throughput GPU cores.\u00a0 This trend is driven by power constraints and the need for ever-increasing performance.\u00a0 Although these new heterogeneous systems can deliver high performance with low energy requirements, new algorithms must be developed to exploit them.\u00a0 The most challenging problems for these systems require a mix of regular and irregular computation.\u00a0 My research into direct methods for sparse linear systems lies within this problem domain and is also a critical component for many applications in computational mathematics. \u00a0\nMy experience makes me well-poised for future research in GPU-based algorithms.\u00a0 As a world leader in algorithmic research for sparse matrix computations, my work combines graph-theoretic methods and numerical techniques to create algorithms for solving problems in computational science that arise across a wide range of applications. I incorporate my novel theory and algorithms into robust library-quality open-source software, which is widely used in industry, academia, and government labs.\u00a0 In the past decade, I have published more software in the ACM Transactions on Mathematical Software than any other author (9% of the algorithmic output of that journal).\nA primary thrust for my current and future work focuses on creating parallel algorithms for sparse multifrontal LU, QR, and Cholesky factorization for hybrid multicore CPU/GPU multiprocessors.\u00a0 The workflow in these algorithms is an irregular tree, where the nodes are the bulk of the work (regular operations on dense frontal matrices of varying sizes), and the edges are the irregular assembly of data from child to parent.\u00a0 The GPUs operate on many frontal matrices at a time, and data is assembled from child to parent frontal matrix without moving it to the CPU.\u00a0 No other sparse direct method employs these strategies for GPU computing.\u00a0 By creating widely-used high-performance algorithms and software that encapsulate these ideas, this research will extend the capability of heterogeneous computing to a wide domain of applications in computational science and mathematics.\nIn recognition of my research efforts in high-performance computing via GPU-based algorithms, NVIDIA has designated Texas A&M as a CUDA Research Center.\nConnections to Computer Science\nThe core of my work lies within the domain of combinatorial scientific computing, which combines combinatorial and graph-theoretic algorithms with numerical methods, and hence relies on nearly all of classical computer science.\u00a0 My graph and sparse matrix algorithms are important to several core areas in computer science, including social network analysis, computer vision, computer graphics, and robotics.\u00a0 For example, all of the robotics projects at OpenSLAM.org that rely on sparse matrix algorithms to solve Simultaneous Localization and Mapping problems use my software.\u00a0 One application relies on my sparse Cholesky update/downdate to process a dynamic set of images collected by a swarm of robots updating a 3D model of the region under exploration.\u00a0 Robotics provides a promising avenue for future research and applications of my work in applied mathematics and sparse linear algebra.\u00a0\nConnections to Mathematics and Operations Research\nI have a long history of creating novel algorithms for new and challenging problems in applied mathematics and optimization techniques.\u00a0 Over a 16-year collaboration with Bill Hager in the Math Department at the University of Florida, I have created the only asymptotically optimal algorithms for the sparse Cholesky update/downdate problem. This problem arises in dual active set methods in optimization, where the factorization must be updated as the basis set changes. I have also developed multilevel graph partitioning algorithms based on Hager's quadratic-programming formulation.\u00a0 Optimization presents unique challenges for the development of sparse matrix and combinatoric algorithms, and provides a rich source of promising problems, including low-rank update/downdate of sparse factorizations, rook pivoting, rank deficient matrices, and finding well-conditioned basis sets.\nConnections to Industry, Open-Source Projects, and Government Labs\u00a0\nIndustry, government labs, and open source projects rely heavily on my work.\u00a0 My sparse solvers appear in dozens of commercial applications from The MathWorks (x=A\\b in MATLAB), Google, NVIDIA, Berkeley Design Automation, Freescale, COMSOL, MSC Software (NASTRAN), Cadence, IBM, Mathematica, ANSYS, Mentor Graphics, and many other companies.\u00a0 Every photo in Google Street View, Photo Tours, and 3D Earth is placed into proper position using my software via Google's Ceres non-linear least squares solver.\u00a0 The US Geological Survey uses my sparse solvers to process images of the Earth, Moon, Mercury, and other planetary bodies, cutting their time-to-solution from hours/days down to minutes.\u00a0 My open-source software has been adopted by all major Linux distributions, and is also widely used in open-source packages such as GIMP (GEGL), R, Octave, FEniCS, ROS (robotics), Boost, Julia, and scilab, to name just a few.\u00a0 Sandia's Xyce circuit simulation package and Berkeley's OpenSees earthquake simulator both rely on my sparse solvers.\u00a0 My software consistently demonstrates the speed and reliability essential for industrial-quality software.\n\u00a0\n\n\u00a0Algorithmic Artwork\nMy algorithmic artwork has appeared on billboards all over London, as the theme artwork for the London Electronic Arts Festival. To create this art, I use Fourier Transforms, graph algorithms, sparse matrices, and MATLAB to translate music into art, via mathematical rules of my creation. \u00a0For more examples, and description of how I create this art, see notesartstudio.com",
+        "url": "https://engineering.tamu.edu/cse/profiles/davis-tim.html",
+        "openalex_author_id": "A5069178025"
+    },
+    {
+        "name": "Tomer Galanti ",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Machine and deep learning\nLarge language models\nArtificial intelligence, Machine and deep learning, Large language models, Artificial intelligence",
+        "url": "https://engineering.tamu.edu/cse/profiles/galanti-tomer.html",
+        "openalex_author_id": "A5050776111"
+    },
+    {
+        "name": "Tracy Anne Hammond",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Sketch recognition\nPerception\nCognitive behavior\nComputer human interaction\nArtificial intelligence\nConcept learning\nComputer graphics\nPsychology\nAnthropology\nThe gender gap in computer science, Sketch recognition, Perception, Cognitive behavior, Computer human interaction, Artificial intelligence, Concept learning, Computer graphics, Psychology, Anthropology, The gender gap in computer science",
+        "url": "https://engineering.tamu.edu/cse/profiles/tahammond.html",
+        "openalex_author_id": "A5075250507"
+    },
+    {
+        "name": "Tung Nguyen",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "",
+        "url": "https://engineering.tamu.edu/cse/profiles/nguyen-tung.html",
+        "openalex_author_id": "A5100642009"
+    },
+    {
+        "name": "Vivek Sarin",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Numerical methods\nParallel algorithms\nComputational science, Numerical methods, Parallel algorithms, Computational science",
+        "url": "https://engineering.tamu.edu/cse/profiles/vsarin.html",
+        "openalex_author_id": "A5111827824"
+    },
+    {
+        "name": "Wenhui Chu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Machine learning\nComputer vision\nArtificial intelligence\nMR-compatible robotic manipulators, Machine learning, Computer vision, Artificial intelligence, MR-compatible robotic manipulators",
+        "url": "https://engineering.tamu.edu/cse/profiles/chu-wenhui.html",
+        "openalex_author_id": "A5043568352"
+    },
+    {
+        "name": "Wenping Wang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Computer graphics\nComputer vision\nMachine learning\nGeometric modeling and computing, Computer graphics, Computer vision, Machine learning, Geometric modeling and computing",
+        "url": "https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html",
+        "openalex_author_id": "A5100395997"
+    },
+    {
+        "name": "Yanlai Wu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Cybersecurity\nHCI\nUsable privacy\nReal\u2011time privacy, Cybersecurity, HCI, Usable privacy, Real\u2011time privacy",
+        "url": "https://engineering.tamu.edu/cse/profiles/wu-yanlai.html",
+        "openalex_author_id": "A5000517220"
+    },
+    {
+        "name": "Yi Zhou",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Nonconvex and distributed optimization\nReinforcement learning\nStatistical learning theory\nMachine learning (ML) for exploratory data analysis (EDA) and computer-aided design (CAD), Nonconvex and distributed optimization, Reinforcement learning, Statistical learning theory, Machine learning (ML) for exploratory data analysis (EDA) and computer-aided design (CAD)",
+        "url": "https://engineering.tamu.edu/cse/profiles/zhou-yi.html",
+        "openalex_author_id": "A5044769501"
+    },
+    {
+        "name": "Yiruo Lin",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Theoretical condensed matter physics\nTopological phases\u00a0and quantum computing\nMathematical modeling of biological systems\nApplication of quantum information theory and machine learning to physical\u00a0and biophysical systems\nFoundations of quantum mechanics, Theoretical condensed matter physics, Topological phases\u00a0and quantum computing, Mathematical modeling of biological systems, Application of quantum information theory and machine learning to physical\u00a0and biophysical systems, Foundations of quantum mechanics",
+        "url": "https://engineering.tamu.edu/cse/profiles/Lin-Yiruo.html",
+        "openalex_author_id": "A5034123082"
+    },
+    {
+        "name": "Yiwei Lyu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Robotics\nSafe control and verification\nBehavior planning\nMulti-agent systems\nHuman-robot interaction, Robotics, Safe control and verification, Behavior planning, Multi-agent systems, Human-robot interaction",
+        "url": "https://engineering.tamu.edu/cse/profiles/lyu-yiwei.html",
+        "openalex_author_id": "A5082318434"
+    },
+    {
+        "name": "Yoonsuck Choe",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Brain networks lab\nNeural intelligence lab\nMulti-scale modeling of mouse brain networks project\nTopographica cortical map simulator project, Brain networks lab, Neural intelligence lab, Multi-scale modeling of mouse brain networks project, Topographica cortical map simulator project",
+        "url": "https://engineering.tamu.edu/cse/profiles/cyoonsuck.html",
+        "openalex_author_id": "A5011352362"
+    },
+    {
+        "name": "Yu Zhang",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Data mining\nNatural language processing\nArtificial intelligence (AI) for science, Data mining, Natural language processing, Artificial intelligence (AI) for science",
+        "url": "https://engineering.tamu.edu/cse/profiles/zhang-yu.html",
+        "openalex_author_id": "A5024657505"
+    },
+    {
+        "name": "Zbigniew Leyk",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "High-performance and parallel computing\nScientific computing\nMachine learning\nComputer science education, High-performance and parallel computing, Scientific computing, Machine learning, Computer science education",
+        "url": "https://engineering.tamu.edu/cse/profiles/leyk-zbigniew.html"
+    },
+    {
+        "name": "Zhengzhong Tu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Spatial intelligence,\u00a03D vision\nMultimodal and generative artificial intelligence (AI)\nAutonomous driving\nTrustworthy multimodal large language models\nMachine learning systems, Spatial intelligence,\u00a03D vision, Multimodal and generative artificial intelligence (AI), Autonomous driving, Trustworthy multimodal large language models, Machine learning systems",
+        "url": "https://engineering.tamu.edu/cse/profiles/tu-zhengzhong.html",
+        "openalex_author_id": "A5015173810"
+    },
+    {
+        "name": "Zhiyuan Yu",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "Trustworthy machine learning systems\nAI-enabled cyber-physical systems\nMultimodal generative AI\u00a0\nUsable and human-centric security\nIntelligent healthcare systems, Trustworthy machine learning systems, AI-enabled cyber-physical systems, Multimodal generative AI, Usable and human-centric security, Intelligent healthcare systems",
+        "url": "https://engineering.tamu.edu/cse/profiles/yu-zhiyuan.html",
+        "openalex_author_id": "A5006248261"
+    },
+    {
+        "name": "Zoran Budimli\u0107",
+        "college": "TAMU",
+        "dept": "CSE",
+        "interests": "High performance and parallel computing\nCompiler optimizations\nProgramming languages \nRuntime systems\nHigh-level programming models\nComputer science education, High performance and parallel computing, Compiler optimizations, Programming languages, Runtime systems, High-level programming models, Computer science education",
+        "url": "https://engineering.tamu.edu/cse/profiles/budimlic-zoran.html",
+        "openalex_author_id": "A5068732242"
+    }
+]
