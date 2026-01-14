@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/badges.css">
+    <!-- PDF Export Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
@@ -91,6 +93,29 @@
                             <p>Analyzing research history...</p>
                         </div>
                         <div id="understandContent"></div>
+
+                        <!-- Chat Interface -->
+                        <div id="chatInterface" class="chat-interface hidden">
+                            <div class="chat-header">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h3>Ask about their Research</h3>
+                                        <p>Strictly constrained to Professor <span id="chatProfName"></span>'s work</p>
+                                    </div>
+                                    <button id="exportChatBtn" class="secondary-btn"
+                                        style="padding: 6px 12px; font-size: 0.8rem;">
+                                        Export PDF
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="chatHistory" class="chat-history">
+                                <!-- Messages will appear here -->
+                            </div>
+                            <div class="chat-input-area">
+                                <input type="text" id="chatInput" placeholder="How do they apply ML to biology?">
+                                <button id="sendChatBtn" class="primary-btn">Ask</button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Tab 2: Find Angle -->

@@ -25,7 +25,8 @@ from config import (
 from models import (
     SearchRequest, SearchResponse, ProfessorResult, PublicationSummary,
     ProfessorDetail, PublicationDetail, HealthResponse,
-    UnderstandResponse, AngleRequest, AngleResponse, NextStepsRequest, NextStepsResponse
+    UnderstandResponse, AngleRequest, AngleResponse, NextStepsRequest, NextStepsResponse,
+    ChatRequest, ChatResponse
 )
 from ranking import (
     rank_professors, get_professor_details, get_publication_details
@@ -539,6 +540,50 @@ async def generate_next_steps(request: NextStepsRequest):
         )
         
     except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/assistant/chat", response_model=ChatResponse, tags=["Assistant"])
+async def chat_with_assistant(request: ChatRequest):
+    """
+    Constrained chat about a professor's research topics.
+    """
+    try:
+        conn = sqlite3.connect(str(DB_PATH))
+        
+        # 1. Get Professor Details
+        prof = get_professor_details(request.professor_id, conn)
+        if not prof:
+            conn.close()
+            raise HTTPException(status_code=404, detail="Professor not found")
+            
+        # 2. Get Recent Publications for Context
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT title, abstract 
+            FROM publications p
+            JOIN author_bridge ab ON p.paper_id = ab.paper_id
+            WHERE ab.professor_id = ?
+            ORDER BY p.year DESC
+            LIMIT 15
+        """, (request.professor_id,))
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        abstracts = [f"Title: {row[0]}\nAbstract: {row[1]}" for row in rows if row[1]]
+        
+        # 3. Convert history to dicts for LLM Service
+        history_dicts = [{"role": msg.role, "content": msg.content} for msg in request.history]
+        
+        # 4. Call LLM Service
+        answer = llm_service.chat_with_professor(prof['name'], abstracts, history_dicts)
+        
+        return ChatResponse(answer=answer)
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 

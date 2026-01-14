@@ -144,5 +144,47 @@ class LLMService:
         
         return self._get_completion(messages)
 
+    def chat_with_professor(self, professor_name: str, abstracts: List[str], history: List[Dict]) -> str:
+        """
+        Mode 1 Extension: Interactive chat about a professor's research.
+        Constrained to the provided research context.
+        """
+        if not self.client:
+            raise ValueError("LLM Service not available")
+
+        context_text = "\n\n".join(abstracts[:10])
+        
+        system_prompt = f"""You are a specialized Research Assistant for Professor {professor_name}.
+Your ONLY goal is to help students understand this professor's work, research themes, and academic contributions.
+
+STRICT CONSTRAINTS:
+1. ONLY discuss Professor {professor_name}'s research, papers, and academic career.
+2. If the user asks about anything else (e.g., general knowledge, personal advice, unrelated science, lifestyle, cooking, politics, etc.), you MUST politely decline. 
+3. Use the provided RESEARCH CONTEXT to answer questions accurately.
+4. If the context doesn't contain the answer, say: "I follow Professor {professor_name}'s published work closely, but I don't have enough specific information in my records to answer that detail."
+5. Never break character. Never mention you are an AI model.
+
+RESEARCH CONTEXT (Abstracts of recent papers):
+{context_text}
+"""
+        # Build message history
+        messages = [{"role": "system", "content": system_prompt}]
+        
+        # Add conversation history
+        for msg in history:
+            messages.append(msg)
+            
+        try:
+            completion = self.client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=messages,
+                temperature=0.3,
+            )
+            return completion.choices[0].message.content
+        except Exception as e:
+            logger.error(f"Chat API Call failed: {str(e)}")
+            return "I'm sorry, I'm having trouble connecting to my research database right now."
+
+
 # Singleton instance
 llm_service = LLMService()

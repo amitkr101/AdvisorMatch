@@ -123,3 +123,14 @@ class NextStepsRequest(BaseModel):
 class NextStepsResponse(BaseModel):
     checklist: List[str]
     outreach_tips: str
+
+class ChatMessage(BaseModel):
+    role: str = Field(..., pattern="^(user|assistant|system)$")
+    content: str
+
+class ChatRequest(BaseModel):
+    professor_id: int
+    history: List[ChatMessage]
+
+class ChatResponse(BaseModel):
+    answer: str

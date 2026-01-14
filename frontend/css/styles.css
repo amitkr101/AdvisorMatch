@@ -141,6 +141,23 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
+.secondary-btn {
+    background: white;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #1e293b;
+}
+
 .search-options {
     display: flex;
     gap: 20px;
