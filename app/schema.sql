@@ -40,3 +40,12 @@ CREATE TABLE IF NOT EXISTS author_bridge (
     FOREIGN KEY (professor_id) REFERENCES professors(id) ON DELETE CASCADE,
     FOREIGN KEY (paper_id) REFERENCES publications(paper_id) ON DELETE CASCADE
 );
+
+-- 4. LLM Cache Table
+-- Stores cached LLM responses for professor summaries to avoid redundant API calls
+CREATE TABLE IF NOT EXISTS llm_cache (
+    professor_id INTEGER PRIMARY KEY,
+    response_json TEXT NOT NULL, -- JSON string of the LLM response
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (professor_id) REFERENCES professors(id) ON DELETE CASCADE
+);

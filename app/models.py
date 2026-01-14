@@ -93,3 +93,33 @@ class HealthResponse(BaseModel):
     database_connected: bool
     index_loaded: bool
     model_loaded: bool
+
+
+# --- AI Assistant Models ---
+
+class UnderstandResponse(BaseModel):
+    themes: List[str]
+    trajectory: str
+    summary: str
+
+class AngleRequest(BaseModel):
+    professor_id: int
+    student_interest: str = Field(..., min_length=5)
+    resume_text: Optional[str] = None
+
+class ResearchAngle(BaseModel):
+    title: str
+    logic: str
+    background_needed: str
+
+class AngleResponse(BaseModel):
+    angles: List[ResearchAngle]
+
+class NextStepsRequest(BaseModel):
+    professor_id: int
+    selected_angle: str
+    student_level: str = Field(..., pattern="^(Undergrad|Masters|PhD)$")
+
+class NextStepsResponse(BaseModel):
+    checklist: List[str]
+    outreach_tips: str

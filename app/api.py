@@ -12,7 +12,7 @@ import sqlite3
 import json
 import time
 from typing import List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 import faiss
 import numpy as np
@@ -24,13 +24,15 @@ from config import (
 )
 from models import (
     SearchRequest, SearchResponse, ProfessorResult, PublicationSummary,
-    ProfessorDetail, PublicationDetail, HealthResponse
+    ProfessorDetail, PublicationDetail, HealthResponse,
+    UnderstandResponse, AngleRequest, AngleResponse, NextStepsRequest, NextStepsResponse
 )
 from ranking import (
     rank_professors, get_professor_details, get_publication_details
 )
 from spellcheck import DomainSpellChecker
 from bm25_search import BM25Searcher
+from llm_service import llm_service
 
 
 app = FastAPI(
@@ -368,6 +370,207 @@ async def get_publication(paper_id: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to retrieve publication: {str(e)}")
+
+
+
+# --- AI Assistant Endpoints ---
+
+@app.get("/api/assistant/understand/{professor_id}", response_model=UnderstandResponse, tags=["Assistant"])
+async def understand_advisor(professor_id: int):
+    """
+    Mode 1: Understand - Summarize a professor's research trajectory.
+    """
+    try:
+        conn = sqlite3.connect(str(DB_PATH))
+        
+        # 0. Check Cache (Mode 1 only)
+        # Check if we have a cached response younger than CACHE_TTL_HOURS
+        from datetime import datetime, timedelta
+        from config import CACHE_TTL_HOURS
+        import json
+        
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT response_json, last_updated 
+            FROM llm_cache 
+            WHERE professor_id = ?
+        """, (professor_id,))
+        row = cursor.fetchone()
+        
+        if row:
+            response_json, last_updated_str = row
+            # Parse timestamp (SQLite default is YYYY-MM-DD HH:MM:SS)
+            try:
+                last_updated = datetime.strptime(last_updated_str, "%Y-%m-%d %H:%M:%S")
+                if datetime.now() - last_updated < timedelta(hours=CACHE_TTL_HOURS):
+                    print(f"Returning cached summary for prof {professor_id}")
+                    conn.close()
+                    return json.loads(response_json)
+            except ValueError:
+                # If timestamp parsing fails, just ignore cache
+                pass
+
+        # 1. Get Professor Name
+        prof = get_professor_details(professor_id, conn)
+        if not prof:
+            conn.close()
+            raise HTTPException(status_code=404, detail="Professor not found")
+            
+        # 2. Get Recent Publications
+        cursor.execute("""
+            SELECT title, abstract 
+            FROM publications p
+            JOIN author_bridge ab ON p.paper_id = ab.paper_id
+            WHERE ab.professor_id = ?
+            ORDER BY p.year DESC
+            LIMIT 15
+        """, (professor_id,))
+        
+        rows = cursor.fetchall()
+        
+        if not rows:
+            conn.close()
+            raise HTTPException(status_code=404, detail="No publications found for this professor")
+            
+        abstracts = [f"Title: {row[0]}\nAbstract: {row[1]}" for row in rows if row[1]]
+        
+        # 3. Call LLM
+        llm_response = llm_service.understand_advisor(prof['name'], abstracts)
+        
+        # 4. Save to Cache
+        try:
+            # We use REPLACE INTO to upsert
+            cursor.execute("""
+                INSERT OR REPLACE INTO llm_cache (professor_id, response_json, last_updated)
+                VALUES (?, ?, datetime('now', 'localtime'))
+            """, (professor_id, json.dumps(llm_response)))
+            conn.commit()
+        except Exception as e:
+            print(f"Failed to cache response: {e}")
+            
+        conn.close()
+        return llm_response
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/assistant/find-angle", response_model=AngleResponse, tags=["Assistant"])
+async def find_research_angle(request: AngleRequest):
+    """
+    Mode 2: Find My Angle - Suggest alignment between student interests and professor.
+    """
+    try:
+        # 1. Embed Student Interest + Resume (if provided)
+        query_text = request.student_interest
+        if request.resume_text:
+            query_text += f"\n\nResume Context:\n{request.resume_text}"
+            
+        query_embedding = model.encode([query_text], normalize_embeddings=True)
+        query_embedding = query_embedding.astype('float32')[0]
+        
+        conn = sqlite3.connect(str(DB_PATH))
+        
+        # 2. Fetch Professor's Papers & Embeddings
+        # Since N is small (<200), we fetch all and compute cosine sim in Python
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT p.paper_id, p.title, p.abstract, p.embedding
+            FROM publications p
+            JOIN author_bridge ab ON p.paper_id = ab.paper_id
+            WHERE ab.professor_id = ?
+            AND p.embedding IS NOT NULL
+        """, (request.professor_id,))
+        
+        rows = cursor.fetchall()
+        
+        if not rows:
+             conn.close()
+             raise HTTPException(status_code=404, detail="Professor has no embedded papers")
+        
+        prof_details = get_professor_details(request.professor_id, conn)
+        conn.close()
+
+        # 3. Compute Similarity
+        import pickle
+        scored_papers = []
+        for pid, title, abstract, blob in rows:
+            paper_emb = pickle.loads(blob)
+            score = np.dot(query_embedding, paper_emb)
+            scored_papers.append({
+                "paper_id": pid,
+                "title": title,
+                "abstract": abstract,
+                "score": score
+            })
+            
+        # 4. Get Top 5 Context Papers
+        scored_papers.sort(key=lambda x: x['score'], reverse=True)
+        top_papers = scored_papers[:5]
+        
+        # 5. Call LLM
+        return llm_service.find_research_angle(prof_details['name'], request.student_interest, top_papers)
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/assistant/next-steps", response_model=NextStepsResponse, tags=["Assistant"])
+async def generate_next_steps(request: NextStepsRequest):
+    """
+    Mode 3: Next Steps - Generate logic checklist.
+    """
+    try:
+        conn = sqlite3.connect(str(DB_PATH))
+        prof = get_professor_details(request.professor_id, conn)
+        conn.close()
+        
+        if not prof:
+             raise HTTPException(status_code=404, detail="Professor not found")
+             
+        return llm_service.generate_next_steps(
+            prof['name'], 
+            request.selected_angle, 
+            request.student_level
+        )
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
+@app.post("/api/parse-resume", tags=["Utils"])
+async def parse_resume(file: UploadFile = File(...)):
+    """
+    Parse uploaded PDF resume and return text.
+    """
+    if not file.filename.endswith('.pdf'):
+        raise HTTPException(status_code=400, detail="Only PDF files are supported")
+    
+    try:
+        import PyPDF2
+        import io
+        
+        # Read file into memory
+        content = await file.read()
+        pdf_file = io.BytesIO(content)
+        
+        # Parse PDF
+        reader = PyPDF2.PdfReader(pdf_file)
+        text = ""
+        for page in reader.pages:
+            text += page.extract_text() + "\n"
+            
+        return {"filename": file.filename, "text": text.strip()}
+        
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to parse resume: {str(e)}")
 
 
 if __name__ == "__main__":

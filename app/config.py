@@ -4,12 +4,22 @@ Configuration settings for AdvisorMatch API
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Base paths
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "advisormatch_openalex.db"
 INDEX_PATH = BASE_DIR / "faiss_index.bin"
 MAPPING_PATH = BASE_DIR / "paper_id_mapping.json"
+
+# LLM Settings
+LLM_API_KEY = os.getenv("API_KEY")
+LLM_BASE_URL = "https://api.perplexity.ai"
+LLM_MODEL = "sonar"
+CACHE_TTL_HOURS = 6
 
 # Model settings
 MODEL_NAME = "all-MiniLM-L6-v2"  # 384-dimensional embeddings

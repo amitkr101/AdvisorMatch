@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdvisorMatch - Find Your Thesis Advisor</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/badges.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <header class="header">
             <div class="logo-container">
                 <div class="logo">
-                    <h1>🎓 AdvisorMatch</h1>
+                    <h1>AdvisorMatch</h1>
                 </div>
                 <p class="tagline">Find your perfect thesis advisor using AI-powered semantic search</p>
             </div>
@@ -34,7 +36,7 @@
                     autocomplete="off">
                 <button id="searchButton" class="search-btn">
                     <span class="btn-text">Search</span>
-                    <span class="btn-icon">🔍</span>
+                    <span class="btn-icon"></span>
                 </button>
             </div>
 
@@ -64,6 +66,88 @@
             <div id="resultsContainer" class="results-container"></div>
         </section>
 
+        <!-- Professor Assistant Modal -->
+        <div id="profModal" class="modal-overlay hidden">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <div class="modal-prof-info">
+                        <h2 id="modalProfName">Professor Name</h2>
+                        <p id="modalProfDept">Department of Computer Science</p>
+                    </div>
+                    <button id="closeModal" class="close-btn">&times;</button>
+                </header>
+
+                <div class="modal-tabs">
+                    <button class="tab-btn active" data-tab="tab-understand">Understand Research</button>
+                    <button class="tab-btn" data-tab="tab-angle">Find My Angle</button>
+                    <button class="tab-btn" data-tab="tab-next">Next Steps</button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Tab 1: Understand -->
+                    <div id="tab-understand" class="tab-content active">
+                        <div id="understandLoading" class="loading-spinner hidden">
+                            <div class="spinner"></div>
+                            <p>Analyzing research history...</p>
+                        </div>
+                        <div id="understandContent"></div>
+                    </div>
+
+                    <!-- Tab 2: Find Angle -->
+                    <div id="tab-angle" class="tab-content">
+                        <div class="input-group">
+                            <label>Your Research Interests</label>
+                            <textarea id="angleInterestInput" class="form-control" rows="3"
+                                placeholder="I am interested in..."></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label>Resume / Background Context (Optional)</label>
+                            <span class="helper-text">Upload your resume (PDF) or paste your summary below.</span>
+
+                            <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
+                                <input type="file" id="resumeUpload" accept=".pdf" style="font-size: 0.9em;">
+                                <span id="parsingStatus" style="font-size: 0.85em; color: #666;"></span>
+                            </div>
+
+                            <textarea id="angleResumeInput" class="form-control" rows="4"
+                                placeholder="Expertise in Python, PyTorch. Previous project on..."></textarea>
+                        </div>
+                        <button id="findAngleBtn" class="primary-btn">Find Alignment</button>
+
+                        <div id="angleLoading" class="loading-spinner hidden" style="margin-top: 20px;">
+                            <div class="spinner"></div>
+                            <p>Finding research connections...</p>
+                        </div>
+                        <div id="angleResults" style="margin-top: 20px;"></div>
+                    </div>
+
+                    <!-- Tab 3: Next Steps -->
+                    <div id="tab-next" class="tab-content">
+                        <div id="nextStepsPlaceholder" style="text-align: center; color: #666; margin-top: 40px;">
+                            <p>Please select a <strong>Research Angle</strong> in the previous tab first.</p>
+                        </div>
+                        <div id="nextStepsContent" class="hidden">
+                            <div class="input-group">
+                                <label>Your Level</label>
+                                <select id="studentLevelSelect" style="padding: 10px; border-radius: 6px;">
+                                    <option value="Undergrad">Undergrad</option>
+                                    <option value="Masters">Masters</option>
+                                    <option value="PhD">PhD</option>
+                                </select>
+                                <button id="generateStepsBtn" class="primary-btn" style="margin-left: 10px;">Generate
+                                    Plan</button>
+                            </div>
+                            <div id="stepsLoading" class="loading-spinner hidden">
+                                <div class="spinner"></div>
+                                <p>Creating action plan...</p>
+                            </div>
+                            <div id="stepsResult"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer class="footer">
             <p>AdvisorMatch - CSCE 670 Project | Texas A&M University</p>
@@ -73,6 +157,7 @@
         </footer>
     </div>
 
+    <script src="js/assistant.js"></script>
     <script src="js/app.js"></script>
 </body>
 

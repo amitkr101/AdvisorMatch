@@ -117,7 +117,9 @@ function createProfessorCard(professor, rank) {
                     <img src="${professor.image_url}" alt="${professor.name}" class="professor-image">
                 ` : ''}
                 <div class="professor-info">
-                    <h3>${rank}. ${professor.name}</h3>
+                    <h3 class="professor-name-link" onclick="assistantModal.open(${professor.professor_id}, '${professor.name.replace(/'/g, "\\'")}', '${professor.department}')">
+                        ${rank}. ${professor.name} <span class="ai-badge">AI Assistant</span>
+                    </h3>
                     <div class="professor-meta">
                         ${professor.department} • ${professor.college}
                     </div>

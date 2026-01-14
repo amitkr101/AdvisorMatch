@@ -1,0 +1,39 @@
+/* AI Badge Style */
+.professor-name-link {
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.professor-name-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.ai-badge {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    font-size: 0.65rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.ai-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+    filter: brightness(1.1);
+}
+
+.ai-badge:active {
+    transform: translateY(0);
+}
